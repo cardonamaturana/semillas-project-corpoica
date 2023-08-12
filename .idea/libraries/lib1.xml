@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Controlador/mysql-connector-java-3.0.17-ga/mysql-connector-java-3.0.17-ga/lib/jdbc2_0-stdext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Controlador/mysql-connector-java-3.0.17-ga/mysql-connector-java-3.0.17-ga/lib/jta-spec1_0_1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

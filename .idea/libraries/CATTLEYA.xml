@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CATTLEYA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/CATTLEYA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

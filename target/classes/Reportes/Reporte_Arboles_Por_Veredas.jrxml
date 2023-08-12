@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b4d9eb33-02db-4742-8170-02cd61e55477">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select count(arboles.cod_copa),donante_copas.nombre,arboles.vereda from arboles inner join copas on copas.cod_copa=arboles.cod_copa inner join donante_copas on donante_copas.cod_donante=copas.cod_donante group by arboles.vereda;]]>
+	</queryString>
+	<field name="count(arboles.cod_copa)" class="java.lang.Long"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="vereda" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement uuid="358252ca-8320-44f1-aabb-80816373801b" x="400" y="20" width="155" height="59"/>
+				<imageExpression><![CDATA["C:\\Users\\jromero\\Documents\\NetBeansProjects\\semillas\\Utidades\\LOGO MIN AGRICULTURA.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="888ea8e8-95cb-41e0-8c9d-1499c75c3806" x="0" y="0" width="400" height="79"/>
+				<imageExpression><![CDATA["C:\\Users\\jromero\\Documents\\NetBeansProjects\\semillas\\Utidades\\LOGO CORPOICA VERDE.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="0a50ab79-e6e0-4bbc-92c0-d9f6ea1c32fe" x="78" y="0" width="449" height="20"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Corporacion Colombiana de Investigacion Agropecuaria CORPOICA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="134a3130-73f2-4ca0-8ab7-90e887d8c7f7" x="78" y="30" width="449" height="35"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                      SEDE - TURIPANÁ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="127" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="579d7be9-0119-49fc-9312-27fe44810987" x="0" y="0" width="119" height="20"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NUMERO DE ARBOLES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc9fac77-6c6a-4b01-a2a9-90173ade83a4" x="145" y="0" width="177" height="20"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE O TIPO DE INJERTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8df85574-72c7-4cd9-9e43-2cab1e54f904" x="400" y="0" width="155" height="20"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VEREDA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="a6ddf2a3-8bbc-4025-9d7b-79105bbc38a2" x="400" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{vereda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e1f75f4f-9c28-450b-9429-fc401b62083c" x="145" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8ddd730e-36d0-4368-9e6c-82c1860e2178" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{count(arboles.cod_copa)}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

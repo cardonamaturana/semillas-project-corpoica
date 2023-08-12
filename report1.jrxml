@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ee84cbf4-4364-4c95-a936-5685fa71240e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     arboles.`Cod_Control` AS arboles_Cod_Control,
+     arboles.`Cod_Patron` AS arboles_Cod_Patron,
+     arboles.`Identificacion_Cultivador` AS arboles_Identificacion_Cultivador,
+     arboles.`Cod_Arbol` AS arboles_Cod_Arbol,
+     arboles.`Departamento` AS arboles_Departamento,
+     arboles.`Cod_Copa` AS arboles_Cod_Copa
+FROM
+     `arboles` arboles]]>
+	</queryString>
+	<field name="arboles_Cod_Control" class="java.lang.Integer"/>
+	<field name="arboles_Cod_Patron" class="java.lang.Integer"/>
+	<field name="arboles_Identificacion_Cultivador" class="java.lang.Long"/>
+	<field name="arboles_Cod_Arbol" class="java.lang.String"/>
+	<field name="arboles_Departamento" class="java.lang.String"/>
+	<field name="arboles_Cod_Copa" class="java.lang.Integer"/>
+	<group name="arboles_Cod_Arbol">
+		<groupExpression><![CDATA[$F{arboles_Cod_Arbol}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<componentElement>
+				<reportElement x="355" y="0" width="200" height="50" uuid="49710647-aa8d-4512-beb4-3cfdd8e1069a"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="bottom">
+					<jr:codeExpression><![CDATA[]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

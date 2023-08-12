@@ -1,0 +1,6 @@
+connections:
+  name: MiConexionMySQL
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://hostname:port/database_name?allowPublicKeyRetrieval=true&useSSL=false
+  username: tu_usuario
+  password: tu_contraseña
