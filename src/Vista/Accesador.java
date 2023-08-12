@@ -107,14 +107,14 @@ String BENEFICIARIO_COLUMNA,BENEFICIARIO_TEXTO;
         jTabbedPane1.setIconAt(7,new javax.swing.ImageIcon(getClass().getResource("/Utilidades/companyyy.png"))); 
         jTabbedPane1.setIconAt(8,new javax.swing.ImageIcon(getClass().getResource("/Utilidades/report.png")));
         // FIN MODELO TABBED PANE.
-       EMPEZAR_INICIO();
-       EMPEZAR_ARBOLES();
-       EMPEZAR_DONANTES();
-       EMPEZAR_COPAS();
-       EMPEZAR_PATRONES();
-       EMPEZAR_COLECTORES();
-       EMPEZAR_EMPRESA();
-       EMPEZAR_BENEFICIARIO();
+//       EMPEZAR_INICIO();
+//       EMPEZAR_ARBOLES();
+//       EMPEZAR_DONANTES();
+//       EMPEZAR_COPAS();
+//       EMPEZAR_PATRONES();
+//       EMPEZAR_COLECTORES();
+//       EMPEZAR_EMPRESA();
+//       EMPEZAR_BENEFICIARIO();
        
          
         

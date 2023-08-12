@@ -17,7 +17,7 @@ public class Conexion {
     String bd = "cattleya";
     String url = "jdbc:mysql://localhost:3306/"+bd+"?allowPublicKeyRetrieval=true";
     String user = "root";
-    String pass="";
+    String pass="JCcm96010711301";
   
     public Conexion() 
     {
